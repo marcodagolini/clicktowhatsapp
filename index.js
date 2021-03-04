@@ -4,8 +4,7 @@ alert("ciao");
 
 var style = document.createElement('style');
 	style.type = 'text/css';
-	var keyFrames = '\
-		.div-click-wa {\
+	var keyFrames = '.div-click-wa {\
   border-style: solid;\
   border-width: 5px;\
   border-color: green;\
