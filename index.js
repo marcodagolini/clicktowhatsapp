@@ -20,7 +20,7 @@ var skill = document.getElementById("mycontainer-waclick").getAttribute("waclick
 var proactiveTemplate = document.getElementById("mycontainer-waclick").getAttribute("waclick-proactiveTemplate");
 var proactivevariables = document.getElementById("mycontainer-waclick").getAttribute("waclick-proactivevariables");
   
-alert(siteId + " " + skill + " " + proactiveTemplate + " " + proactivevariables)
+// alert(siteId + " " + skill + " " + proactiveTemplate + " " + proactivevariables)
   
   
 function callApi(){
