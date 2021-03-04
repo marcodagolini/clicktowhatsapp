@@ -40,10 +40,10 @@ function callApi(){
   var xhr = new XMLHttpRequest();
   xhr.addEventListener("readystatechange", function () {
     if (this.readyState === 4) {
-      if (xhr.response === "error"){
-        // do somthing
+      if (xhr.response.state === "error"){
+        alert("error --> " + xhr.response.message)
       } else{
-        //do somthing
+        alert("success")
       }
     }
   });
