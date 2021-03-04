@@ -25,7 +25,7 @@ alert(siteId + " " + skill + " " + proactiveTemplate + " " + proactivevariables)
   
   
 function callApi(){
-  alert(document.getElementById("internationalCode").value);
+  alert(document.getElementById("internationalCode").value + document.getElementById("wa-number").value);
 }
 
 
