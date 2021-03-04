@@ -31,7 +31,7 @@ function callApi(){
     alert("choose a valid international code, please");
     return
   }
-  if(isNaN(number) && (number !== "")){
+  if(isNaN(number) || (number !== "")){
     alert("insert a valid phone number, please");
     return
   }
