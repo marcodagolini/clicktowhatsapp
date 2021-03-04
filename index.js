@@ -39,6 +39,7 @@ function callApi(){
   var xhr = new XMLHttpRequest();
   xhr.addEventListener("readystatechange", function () {
     if (this.readyState === 4) {
+      console.log(JSON.stringify(xhr.response));
       if (xhr.response.state === "error"){
         alert("error --> " + xhr.response.message)
       } else{
