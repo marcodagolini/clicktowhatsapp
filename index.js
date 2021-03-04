@@ -37,14 +37,14 @@ function callApi(){
   }
   
   var editCSS = document.createElement('style')
-  editCSS.innerHTML = ".winner {opacity: 0.2;}";
+  editCSS.innerHTML = ".div-click-wa {opacity: 0.2;}";
   document.body.appendChild(editCSS);
   
   var xhr = new XMLHttpRequest();
   xhr.addEventListener("readystatechange", function () {
     if (this.readyState === 4) {
       var editCSS = document.createElement('style')
-      editCSS.innerHTML = ".winner {opacity: 1;}";
+      editCSS.innerHTML = ".div-click-wa {opacity: 1;}";
       document.body.appendChild(editCSS);
       console.log(xhr.response);
       if (JSON.parse(xhr.response).state === "error"){
