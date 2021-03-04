@@ -28,10 +28,10 @@ function callApi(){
   var internationalCode = document.getElementById("internationalCode").value;
   var number = document.getElementById("wa-number").value;
   if(internationalCode === "0"){
-    alert("choose a valid internatinal code, please");
+    alert("choose a valid international code, please");
     return
   }
-  if(isNaN(number)){
+  if(isNaN(number) && (number !== "")){
     alert("insert a valid phone number, please");
     return
   }
