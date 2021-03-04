@@ -1,7 +1,6 @@
 alert("ciao");
 
 
-
 var style = document.createElement('style');
 	style.type = 'text/css';
 	var keyFrames = '.div-click-wa {\
