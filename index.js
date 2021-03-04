@@ -25,6 +25,16 @@ alert(siteId + " " + skill + " " + proactiveTemplate + " " + proactivevariables)
   
   
 function callApi(){
+  var internationalCode = document.getElementById("internationalCode").value;
+  var number = document.getElementById("wa-number").value;
+  if(internationalCode === 0){
+    alert("choose a valid internatinal code, please");
+    return
+  }
+  if(isNaN(number)){
+    alert("insert a valid phone number, please");
+    return
+  }
   alert(document.getElementById("internationalCode").value + document.getElementById("wa-number").value);
 }
 
