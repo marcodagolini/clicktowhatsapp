@@ -34,7 +34,25 @@ function callApi(){
     alert("insert a valid phone number, please");
     return
   }
-  alert(document.getElementById("internationalCode").value + document.getElementById("wa-number").value);
+  
+  var xhr = new XMLHttpRequest();
+  xhr.addEventListener("readystatechange", function () {
+    if (this.readyState === 4) {
+      if (xhr.response === "error"){
+        // do somthing
+      } else{
+        //do somthing
+      }
+    }
+  });
+  var URLforPOST = "https://marcowabot.herokuapp.com/outboundWhatsapp";
+  xhr.open("POST", URLforPOST);
+  xhr.setRequestHeader("Content-Type", "application/json");
+  var myBodyToSend = JSON.stringify({"internationalCode": internationalCode, "number": number, "siteId": siteId, "skill": skill, "proactiveTemplate": proactiveTemplate, "proactivevariables": proactivevariables});
+  xhr.send(myBodyToSend);
+  
+  
+  // alert(document.getElementById("internationalCode").value + document.getElementById("wa-number").value);
 }
 
 
