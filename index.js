@@ -54,7 +54,8 @@ function callApi(){
   var URLforPOST = "https://marcowabot.herokuapp.com/outboundWhatsapp";
   xhr.open("POST", URLforPOST);
   xhr.setRequestHeader("Content-Type", "application/json");
-  xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
+  xhr.setRequestHeader("Access-Control-Allow-Origin", "https://marcodagolini.github.io");
+  xhr.setRequestHeader("Access-Control-Allow-Credentials", "true");
   var myBodyToSend = JSON.stringify({"internationalCode": internationalCode, "number": number, "siteId": siteId, "skill": skill, "proactiveTemplate": proactiveTemplate, "proactivevariables": proactivevariables});
   xhr.send(myBodyToSend);
   
