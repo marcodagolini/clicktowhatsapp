@@ -20,6 +20,7 @@ var siteId = document.getElementById("mycontainer-waclick").getAttribute("waclic
 var skill = document.getElementById("mycontainer-waclick").getAttribute("waclick-skill");
 var proactiveTemplate = document.getElementById("mycontainer-waclick").getAttribute("waclick-proactiveTemplate");
 var proactivevariables = document.getElementById("mycontainer-waclick").getAttribute("waclick-proactivevariables");
+var smsBody = document.getElementById("mycontainer-waclick").getAttribute("waclick-smsbody");
   
 // alert(siteId + " " + skill + " " + proactiveTemplate + " " + proactivevariables)
   
@@ -54,7 +55,7 @@ function callApi(){
   xhr.open("POST", URLforPOST);
   xhr.setRequestHeader("Content-Type", "application/json");
 
-  var myBodyToSend = JSON.stringify({"internationalCode": internationalCode, "number": number, "siteId": siteId, "skill": skill, "proactiveTemplate": proactiveTemplate, "proactivevariables": proactivevariables});
+  var myBodyToSend = JSON.stringify({"internationalCode": internationalCode, "number": number, "siteId": siteId, "skill": skill, "proactiveTemplate": proactiveTemplate, "proactivevariables": proactivevariables, "smsBody": smsBody});
   xhr.send(myBodyToSend);
   
   
