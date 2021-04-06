@@ -19,6 +19,7 @@ document.getElementById("mycontainer-waclick").innerHTML+= '<div class="div-clic
 var siteId = document.getElementById("mycontainer-waclick").getAttribute("waclick-siteId");
 var skill = document.getElementById("mycontainer-waclick").getAttribute("waclick-skill");
 var proactiveTemplate = document.getElementById("mycontainer-waclick").getAttribute("waclick-proactiveTemplate");
+var language = document.getElementById("mycontainer-waclick").getAttribute("waclick-language");
 var proactivevariables = document.getElementById("mycontainer-waclick").getAttribute("waclick-proactivevariables");
 var smsBody = document.getElementById("mycontainer-waclick").getAttribute("waclick-smsbody");
   
@@ -55,7 +56,7 @@ function callApi(){
   xhr.open("POST", URLforPOST);
   xhr.setRequestHeader("Content-Type", "application/json");
 
-  var myBodyToSend = JSON.stringify({"internationalCode": internationalCode, "number": number, "siteId": siteId, "skill": skill, "proactiveTemplate": proactiveTemplate, "proactivevariables": proactivevariables, "smsBody": smsBody});
+  var myBodyToSend = JSON.stringify({"internationalCode": internationalCode, "number": number, "siteId": siteId, "skill": skill, "language": language, "proactiveTemplate": proactiveTemplate, "proactivevariables": proactivevariables, "smsBody": smsBody});
   xhr.send(myBodyToSend);
   
   
