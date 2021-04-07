@@ -21,6 +21,7 @@ var skill = document.getElementById("mycontainer-waclick").getAttribute("waclick
 var templateID = document.getElementById("mycontainer-waclick").getAttribute("waclick-templateId");
 var outboundNumber = document.getElementById("mycontainer-waclick").getAttribute("waclick-outboundNumber");
 var proactivevariables = document.getElementById("mycontainer-waclick").getAttribute("waclick-proactivevariables");
+proactivevariables = proactivevariables.split("_").join(" ");
   
   console.log("*********");
   console.log(proactivevariables);
