@@ -22,6 +22,9 @@ var templateID = document.getElementById("mycontainer-waclick").getAttribute("wa
 var outboundNumber = document.getElementById("mycontainer-waclick").getAttribute("waclick-outboundNumber");
 var proactivevariables = document.getElementById("mycontainer-waclick").getAttribute("waclick-proactivevariables");
   
+  conole.log("*********");
+  console.log(proactivevariables);
+  
 // alert(siteId + " " + skill + " " + proactiveTemplate + " " + proactivevariables)
   
   
