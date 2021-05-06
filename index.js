@@ -55,7 +55,7 @@ function callApi(){
       }
     }
   });
-  var URLforPOST = "https://abc-auth.herokuapp.com/outboundWhatsapp";
+  var URLforPOST = "https://marcowabot.herokuapp.com/outboundWhatsapp";
   xhr.open("POST", URLforPOST);
   xhr.setRequestHeader("Content-Type", "application/json");
 
